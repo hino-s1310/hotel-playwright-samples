@@ -20,6 +20,9 @@ playwright/playwright-report/
 # Logs
 *.log
 
+# VS Code walkthrough extension build artifacts
+*.vsix
+
 # Env files
 .env
-.env.* 
+.env.*
