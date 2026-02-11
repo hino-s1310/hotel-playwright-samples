@@ -1,0 +1,56 @@
+{
+  "name": "e2e-testing-walkthrough",
+  "displayName": "Playwright E2Eテスト入門ガイド",
+  "description": "このリポジトリのE2Eテストを通じて、Playwrightのロケータ、POM、テスト記述、実行方法を学ぶウォークスルー",
+  "version": "0.1.0",
+  "publisher": "hotel-playwright-samples",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["*"],
+  "main": "./extension.js",
+  "contributes": {
+    "walkthroughs": [
+      {
+        "id": "e2e-testing-walkthrough",
+        "title": "Playwright E2Eテスト入門ガイド",
+        "description": "このリポジトリの実コードを使い、ロケータ定義 → POM実装 → Spec記述 → テスト実行の4ステップでE2Eテストの基礎を学びます（約30分）",
+        "steps": [
+          {
+            "id": "step-locators",
+            "title": "Step 1: ロケータ式の定義",
+            "description": "ページ上の要素を特定するロケータの書き方を学びます。IDセレクタ・ロールベースセレクタなど、Playwrightが提供する各種ロケータを実コードで確認します。\n\n[loginPage.ts を開く](command:e2eWalkthrough.open.loginPage)\n\n[signupPage.ts を開く](command:e2eWalkthrough.open.signupPage)\n\n[header.ts を開く](command:e2eWalkthrough.open.header)",
+            "media": {
+              "markdown": "walkthrough/step1-locators.md"
+            }
+          },
+          {
+            "id": "step-pom",
+            "title": "Step 2: Page Object Modelの実装",
+            "description": "テストの保守性を高めるPOMパターンを学びます。BasePage・ページオブジェクト・コンポーネント・Builder・Facadeの各層の役割を理解します。\n\n[basePage.ts を開く](command:e2eWalkthrough.open.basePage)\n\n[loginPageBuilder.ts を開く](command:e2eWalkthrough.open.loginPageBuilder)\n\n[loginFacade.ts を開く](command:e2eWalkthrough.open.loginFacade)",
+            "media": {
+              "markdown": "walkthrough/step2-pom.md"
+            }
+          },
+          {
+            "id": "step-spec",
+            "title": "Step 3: Specの記述",
+            "description": "テストファイルの書き方を学びます。カスタムFixture・データ駆動テスト・Facadeの活用によるテスト記述パターンを理解します。\n\n[login.spec.ts を開く](command:e2eWalkthrough.open.loginSpec)\n\n[fixtures.ts を開く](command:e2eWalkthrough.open.fixtures)\n\n[users.ts を開く](command:e2eWalkthrough.open.users)",
+            "media": {
+              "markdown": "walkthrough/step3-spec.md"
+            }
+          },
+          {
+            "id": "step-execution",
+            "title": "Step 4: テストの実行",
+            "description": "テストの実行方法を学びます。CLI・headed・UI・デバッグモードの使い分けと、設定ファイル・レポート・CI連携を理解します。\n\n[playwright.config.ts を開く](command:e2eWalkthrough.open.playwrightConfig)\n\n[テストを実行する](command:e2eWalkthrough.runTest)\n\n[UIモードで開く](command:e2eWalkthrough.runTestUI)",
+            "media": {
+              "markdown": "walkthrough/step4-execution.md"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

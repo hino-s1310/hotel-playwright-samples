@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "E2E Walkthrough",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/e2e-walkthrough",
+        "${workspaceFolder}"
+      ]
+    }
+  ]
+}
