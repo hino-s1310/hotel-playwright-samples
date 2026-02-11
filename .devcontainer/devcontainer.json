@@ -1,6 +1,7 @@
 {
   "name": "Playwright E2E Walkthrough",
   "build": {
+    "context": "..",
     "dockerfile": "Dockerfile"
   },
   "postCreateCommand": "bash .devcontainer/postCreate.sh",
@@ -8,7 +9,8 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-playwright.playwright"
+        "ms-playwright.playwright",
+        "/tmp/e2e-testing-walkthrough.vsix"
       ],
       "settings": {
         "playwright.reuseBrowser": true
